@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="./styles.css/style.css">
+  </head>
+  <body>
+    
+    <div id="container">
+      <div id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button id="backButton">Mes Anterior</button>
+          <button id="nextButton">Mes Siguiente</button>
+        </div>
+      </div>
+
+      <div id="weekdays">
+        <div>Domingo</div>
+        <div>Lunes</div>
+        <div>Martes</div>
+        <div>Miercoles</div>
+        <div>Jueves</div>
+        <div>Viernes</div>
+        <div>Sabado</div>
+      </div>
+
+      <div id="calendar"></div>
+    </div>
+
+    <div id="newEventModal">
+      <h2>Nuevo Evento</h2>
+
+      <input id="eventTitleInput" placeholder="Titulo del Evento" />
+
+      <button id="saveButton">Agregar</button>
+      <button id="cancelButton">Cancelar</button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Recordar</h2>
+
+      <p id="eventText"></p>
+
+      <button id="deleteButton">Eliminar</button>
+      <button id="closeButton">Cerrar</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+
+    <script src="./js/miarchivo.js"></script>
+  </body>
+</html>
