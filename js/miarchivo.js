@@ -64,7 +64,7 @@ function load() {
       daySquare.innerText = i - paddingDays;
       const eventForDay = events.find(e => e.date === dayString);
 
-      if (i - paddingDays === day && nav === 0) {
+      if (i - paddingDays === day && nav === 0) { // se aplica opreador logico and 
         daySquare.id = 'currentDay';
       }
 
