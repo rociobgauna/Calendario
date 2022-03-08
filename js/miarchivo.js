@@ -8,7 +8,8 @@ const deleteEventModal = document.getElementById('deleteEventModal');
 const backDrop = document.getElementById('modalBackDrop');
 const eventTitleInput = document.getElementById('eventTitleInput');
 //coloco dias en ingles si aun no cambie el idioma,de lo contrario la fecha no coincide con el dia
-const weekdays = ['Sundayd', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; //array con dias dentro de un const para que no se modifiquen
+const weekend = ['Friday','Saturday'];
+const weekdays = ['Sundayd', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', ...weekend]; //se aplica spread
 
 function openModal(date) {
   clicked = date;
